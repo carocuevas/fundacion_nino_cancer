@@ -77,6 +77,11 @@ h2{
     font-weight: 200;
     font-family: 'Vollkorn', serif;
 }
+h3{
+    font-family: 'Muli', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+}
 h6{
     text-align: left;
     font-weight: 200;
@@ -127,20 +132,12 @@ a:hover{
     background-color: rgba(0,0,0,.5);
     border-radius: 15px;
     color: white;
-    max-width: 1000px;
     display: inline-block;
     text-align: center;
     padding: 5px 60px;
 }
-.text_block_slide{
-    background-color: rgba(0,0,0,.5);
-    border-radius: 15px;
-    color: white;
-    max-width: 1000px;
-    display: inline-block;
-    text-align: center;
-    padding: 5px 60px;
-    position: absolute;
+.block_weare{
+    margin: 20px 20vw;
 }
 .item{
     background-position: center;
@@ -150,10 +147,28 @@ a:hover{
 }
 .item h1{
     text-align: center;
+    font-size: 55px;
 }
 .thumbnail{
     text-align: center;
     border: 4px solid #ddd;
+}
+.futbol{
+    background-image: url(../img/futbolito.png);
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    height: 200px;
+    margin-top: 30px;
+}
+.futbol h3 a{
+    color: #121895;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+    margin: 40px;
+    margin-bottom: 10px;
+    font-weight: 900;
 }
 .thumbnailNews{
     border-radius: 20px;
@@ -161,6 +176,16 @@ a:hover{
     padding: 0;
     overflow: hidden;
     margin-bottom: 8vh;
+}
+.thumbnail_weare{
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 8vh;
+    height: 50vh;
+    margin: 10px;
+    text-align: left;
+    padding: 10px;
+    overflow: hidden;
 }
 .jumbotron{
     margin: 0;
@@ -193,4 +218,75 @@ footer.jumbotron{
     color: white;
     font-size: 16px;
 }
-
+.thumbnail_first{
+    margin: 30px;
+}
+.footer_rrss {
+    text-align: center;
+    padding: 0;
+    font-size: 1rem;
+    color: white;
+}
+.footer_social{
+    display: inline;
+    font-size: 3em;
+    margin: 0 .3em;
+}
+.footer_social:hover {
+    color: #434343;
+}
+.jumbotron_weare{
+    background-image: url(../img/slider2.jpg);
+    background-position: center;
+}
+.jumbotron_weare_mision{
+    background-image: url(../img/slider4.jpg);
+    background-position: top;
+    margin-top: 30px;
+}
+.jumbotron_weare h1{
+    color: white;
+    position: relative;
+}
+.jumbotron_weare_mision h1{
+    color: white;
+    position: relative;
+}
+.jumbotron_blog{
+    background-image: url(../img/slider3.jpg);
+    background-position: center;
+}
+.jumbotron_blog h1{
+    color: white;
+    position: relative;
+}
+.block_blog{
+    margin: 20px 20vw;
+}
+.fab{
+    color: white;
+}
+.div_news{
+    border: 4px solid #ddd;
+    float: center;
+}
+.jumbotron p a{
+    font-size: 0.7em;
+    margin: 0;
+    line-height: 0.3;
+}
+.container_mision{
+    padding: 30px 0;
+}
+.containerNews{
+    margin-top: 50px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom:20px;
+}
+article.containerNews img{
+    max-width: 400px;
+}
+.btn-primary{
+    margin: 10px;
+    float: left;
+}
