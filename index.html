@@ -16,6 +16,10 @@
 </head>
 
 <body>
+
+<!-- Banner principal, con imágenes alusivas a los servicios de la
+fundación. Deben existir thumbnails con noticias relevantes.. -->
+
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -38,7 +42,7 @@
 		</div>
 	</nav>
 
-	<header>
+	<header class=headerBanner>
 		<div>
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
@@ -67,33 +71,103 @@
 		</div>
 	</header>
 
-	<section>
+	<main>
 		<article class="row">
-			<div class="col-md-offset-1 col-md-3">
-				foto
+			<div class="col-md-offset-1 thumbnail col-md-3">
+				<img src="assets/img/futbolito.png" alt="Noticias">
 			</div>
 			<div class="col-md-4">
 				<a href="noticias.html">Noticias</a>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem odit reiciendis architecto laborum ut voluptatem voluptates iusto, dolores natus explicabo vero, perspiciatis sint est dolor ullam quaerat, repudiandae! Unde, et?
-			</div>
-
-
-			
+				<ul>
+					<li><a href="noticias.html">Noticias</a></li>
+					<li>Tallarinata de amor y sonrisas - Una noche de sonrisas, amor y generosidad</li>
+					<li>Montaña de la Alegría 2017 - Realización del Taller de Ski</li>
+					<li>Carta de agradecimiento a nuestros socios y colaboradores</li>
+					<li>Conozca los requisitos para postular a nuestros departamentos de acogida</li>
+					<li>Agradecimientos del grupo de familias "Aprendiendo a revivir"</li>
+					<li>Ex paciente publica su libro: "Con tu apoyo, yo le gano al cáncer"</li>
+				</ul>
+			</div>			
 		</article>
 
+		<section class="jumbotron">
+			<h2>Haga su donación</h2>
+			<h2><a href="#">deposite aquí</a></h2>
+		</section>
 
-		<div class="slider-home col-md-offset-2 col-md-8">
-			<div>hola</div>
-			<div>chao</div>
-			<div>si</div>
-			<div>hola</div>
-			<div>adios</div>
-			<div>bai</div>
+		<section class="container">
+			<article class="row">
+				<div class="col-md-offset-1 col-md-3">
+					<div class="thumbnail">
+						<img src="" alt="">
+						<div class="caption">
+							<h4>Renovación de Unidades de Oncología Infantil</h4>
+							<p>Hospital San Juan de Dios</p>
+							<p>Hospital de Concepción</p>
+							<p>Hospital San Borja Arriarán</p>
+							<a href="#">Ver más</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="thumbnail">
+						<img src="" alt="">
+						<div class="caption">
+							<h4>Manual para Padres de niños Oncológicos</h4>
+							<p>Descargue este manual de información básica sobre la enfermedad, tratamiento, cuidados en el hogar y manejo del impacto de la enfermedad.</p>
+							<a href="#">Descargar</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="thumbnail">
+						<img src="" alt="">
+						<div class="caption">
+							<h4>Coronas de Caridad Fundación Niño y Cáncer</h4>
+							<p>Entregue condolencias los deudos a través de nuestras tarjetas. Conozca los nuevos diseños.</p>
+							<a href="#">Ver más</a>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+	</main>
+
+<!-- La información de contacto: Redes sociales y teléfono.
+Mapa de ubicación: Implementado mediante un iframe (responsivo). Formulario de contacto. -->
+
+	<footer class=jumbotron>
+		<div class="row">
+			<div class="col-md-3">
+				<h6>Dirección: Tupungato 10070 Vitacura, Santiago de Chile</h6>
+				<h6>Teléfono: 22170821 - 22170811</h6>
+				<h6>Fax</h6>
+				<h6>Cta. Cte.: Banco BCI N° 85999997</h6>
+				<h6>RUT: 72.169.900-5</h6>
+				<h6>Email: fundacion@ninoycancer.cl</h6>
+			</div>
+			<div class="col-md-5">
+				<form>
+				</form>
+			</div>
+			<div class="col-md-5">
+				<div class="googleMap"></div>
+			</div>
 		</div>
-	</section>
-
-	<footer>
 	</footer>
+
+	<script>
+	function myMap() {
+	var mapProp= {
+	var mapProp= {
+	    center:new google.maps.LatLng(-33.4290674,-70.5800376,15),
+	    zoom:13,
+		};
+	var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+	}
+	</script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.js"
 	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
