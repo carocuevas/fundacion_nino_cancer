@@ -6,7 +6,7 @@ body {
     font-weight: lighter;
     font-family: sans-serif;
     position: fixed;
-    background: rgba(255,255,255, 0.8);
+    background: rgba(255,255,255, 0.9);
     z-index: 1000;
     border: none;
 }
@@ -49,14 +49,10 @@ caption{
 }
 .headerBanner{
     width: inherit;
-    top: 0px;
-    padding: 3em;
+    padding: 0;
     text-align: center;
     font-weight: lighter;
     font-family: sans-serif;
-}
-.carousel{
-    margin-top: 30px;
 }
 .carousel-inner{
     height: 30em;
@@ -148,6 +144,8 @@ a:hover{
 .item h1{
     text-align: center;
     font-size: 55px;
+    width: 100vw;
+    padding-top: 40px;
 }
 .thumbnail{
     text-align: center;
@@ -162,13 +160,23 @@ a:hover{
     margin-top: 30px;
 }
 .futbol h3 a{
-    color: #121895;
+    color: white;
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
-    margin: 40px;
-    margin-bottom: 10px;
     font-weight: 900;
+}
+.text_block_futbol{
+    background-color: rgba(0,0,0,.5);
+    display: inline-block;
+    text-align: center;
+    padding: 10px 52px;
+    height: 190px;
+    margin: 5px; 
+}
+.text_block_futbol a:hover{
+    display: inline-block;
+    padding: 52px 300px; 
 }
 .thumbnailNews{
     border-radius: 20px;
@@ -281,7 +289,7 @@ footer.jumbotron{
 .containerNews{
     margin-top: 50px;
     border-bottom: 1px solid #ddd;
-    padding-bottom:20px;
+    padding-bottom:20px; 
 }
 article.containerNews img{
     max-width: 400px;
@@ -289,4 +297,11 @@ article.containerNews img{
 .btn-primary{
     margin: 10px;
     float: left;
+}
+.container_futbolnews{
+    border-bottom: 1px solid #ddd;
+    padding-bottom:20px;
+}
+section.container{
+    margin-top: 20px;
 }
